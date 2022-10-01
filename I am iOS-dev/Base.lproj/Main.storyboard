@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,23 +13,36 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="I_am_iOS_dev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I am iOS-dev" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0X-YW-i93">
-                                <rect key="frame" x="20" y="127" width="374" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appstore" translatesAutoresizingMaskIntoConstraints="NO" id="Hpj-bI-oy9">
+                                <rect key="frame" x="60" y="287" width="270" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Hpj-bI-oy9" secondAttribute="height" multiplier="1:1" id="jGR-ou-9Lu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am iOS-dev" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0X-YW-i93">
+                                <rect key="frame" x="42" y="103" width="306" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="akW-9g-nbs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <color key="textColor" systemColor="systemTealColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appstore" translatesAutoresizingMaskIntoConstraints="NO" id="Hpj-bI-oy9">
-                                <rect key="frame" x="73" y="208" width="269" height="269"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hpj-bI-oy9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ISP-fn-28k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hpj-bI-oy9" secondAttribute="bottom" constant="253" id="O6l-go-AQ2"/>
+                            <constraint firstItem="H0X-YW-i93" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="QwW-xU-McS"/>
+                            <constraint firstItem="Hpj-bI-oy9" firstAttribute="centerX" secondItem="H0X-YW-i93" secondAttribute="centerX" id="Y2W-rt-Qsv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H0X-YW-i93" secondAttribute="trailing" constant="42" id="ovh-FW-JU0"/>
+                            <constraint firstItem="Hpj-bI-oy9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0T-4S-68S"/>
+                            <constraint firstItem="H0X-YW-i93" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="tzI-25-ICb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
